@@ -21,4 +21,5 @@ def add_copyright_symbol():
                 userinput = userinput.replace(company, company + '©')
                 return jsonify(userinput), 201
 
-app.run()
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=80)
