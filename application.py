@@ -14,12 +14,12 @@ def add_copyright_symbol():
         abort(400)
     else:
         userinput = request.json['input']
-        companies = ['Oracle', 'Google', 'Microsoft', 'Amazon', 'Deloitte']
+        companies = ['Oracle', 'oracle', 'Google', 'google', 'Microsoft', 'microsoft', 'Amazon', 'amazon', 'Deloitte', 'deloitte']
 
         for company in companies:
             if company in userinput:
                 userinput = userinput.replace(company, company + '©')
-                return jsonify(userinput), 201
+    return jsonify(userinput), 201
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=80)
+    app.run(host='0.0.0.0', port=80)
