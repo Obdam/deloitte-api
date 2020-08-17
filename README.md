@@ -1,5 +1,5 @@
 ## Deloitte API
-------
+
 Welcome to this small API created for a second round of a job interview at Deloitte Netherlands. The goal of the API is to return a company's name with a copyright symbol. The two endpoints are described below. The API can be found at [http://api.obdam.xyz/](http://api.obdam.xyz/) or [http://15.236.219.94/](http://15.236.219.94/).
 
 ### Main endpoint **GET** `/`
