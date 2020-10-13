@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: deloitte-api-k8s
+spec:
+  containers:
+  - name: testpod
+    image: obdam/simple-api-overview:latest
+    imagePullPolicy: Always
+    command: ["python", "app.py"]
